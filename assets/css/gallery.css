@@ -1,0 +1,41 @@
+
+/* ========= GALLERY SECTION ========= */
+
+section {
+   width: 100vw;
+}
+
+.header__container {
+   padding-top: 5rem;
+}
+
+.header__row {
+   display: flex;
+   flex-wrap: wrap; /* Para que actue el responsive */
+}
+
+.header__column {
+   flex: 25%;
+   max-width: 25%;
+}
+
+.header__column img {
+   margin-top: 1rem;
+   padding-left: 1rem;
+}
+
+/* ========= RESPONSIVE ========= */
+
+@media screen and (max-width: 1024px) {
+   .header__column {
+      flex: 50%;
+      max-width: 50%;
+   }
+}
+
+@media screen and (max-width: 600px) {
+   .header__column {
+      flex: 100%;
+      max-width: 100%;
+   }
+}

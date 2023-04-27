@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-fondo: #E1E1E1;
+    --color-blanco: #fff;
+    --color-negro: #000;
+    --contenedor-ancho-lg: 76%;
+    --contenedor-ancho-md: 90%;
+    --contenedor-ancho-sm: 94%;
+    --transicion: all 400ms ease;
+}
+
+body {
+    font-family: 'Monserrat', sans-serif;
+    background-color: var(--color-fondo);
+    overflow-x: hidden;
+    /* line-height: 1.7; */
+}
+
+.container {
+    width: var(--contenedor-ancho-lg);
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+/* ========= NAVBAR ========= */
+
+nav {
+    background-color: black;
+    width: 100vw;
+    height: 5rem;
+    position: fixed;
+}
+
+nav button {
+    display: none;
+}
+
+.nav__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+nav a {
+    color: white;
+}
+
+nav p {
+    line-height: normal;
+}
+
+.nav__menu {
+    display: flex;
+    gap: 2.8rem;
+}
+
+.nav__logo {
+    height: 100%;
+    width: 14.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo img {
+    height: 60px;
+    width: 50px;
+}
+
+/* ========= FOOTER ========= */
+
+footer {
+    background-color: black;
+    height: 6rem;
+    margin-top: 1rem;
+    width: 100vw;
+}
+
+.footer__container {
+    padding-top: 1rem;
+    text-align: center;
+}
+
+footer p {
+    color: white;
+}
+
+footer a {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.footer__menu {
+    margin-top: 0.3rem;
+}
+
+/* ========= Responsive Design ========= */
+
+@media screen and (max-width: 1024px) {
+    .container {
+        width: var(--contenedor-ancho-md);
+        margin: 0 auto;
+    }
+    nav button {
+        display: inline-block;
+        background: transparent;
+        font-size: 1.8rem;
+        color: white;
+        cursor: pointer;
+    }
+    nav button#close-menu-icon{
+        display: none;
+    }
+    .nav__menu {
+        position: fixed;
+        top: 5rem;
+        right: 5%;
+        height: fit-content;
+        width: 18rem;
+        flex-direction: column;
+        gap: 0;
+        display: none;
+    }
+    .nav__menu li {
+        width: 100%;
+        height: 5.8rem;
+    }
+    .nav__menu li a {
+        background: black;
+        /* box-shadow: -4rem 6rem 10rem rgba(0, 0, 0, 0.6); */
+        width: 100%;
+        height: 100%;
+        display: grid;
+        place-items: center;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        width: var(--contenedor-ancho-sm);
+        margin: 0 auto;
+    }
+}
