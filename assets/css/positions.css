@@ -1,0 +1,7 @@
+section {
+    width: 100vw;
+}
+
+section .positions__container {
+    padding-top: 5rem;
+}

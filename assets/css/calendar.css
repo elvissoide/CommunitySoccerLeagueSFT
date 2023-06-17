@@ -1,0 +1,103 @@
+/* ========= CALENDAR SECTION ========= */
+section {
+    width: 100vw;
+}
+
+.calendar__container {
+    padding-top: 5rem;
+}
+
+/* ========= CALENDAR SECTION ========= */
+.calendar {
+    max-width: 50rem;
+    margin: 3rem auto;
+    background-color: white;
+    padding: 2rem 3rem;
+}
+
+.calendar__title {
+    text-align: center;
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+
+.calendar__fixture {
+    margin-top: 1rem;
+}
+
+/* ========= GAME TIME ========= */
+.game__time {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.2rem;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+}
+
+.game__time p {
+    width: 16rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.game__time span {
+    font-weight: bold;
+    color: #767676;
+}
+
+/* ========= GAME INFO ========= */
+.game__info {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 0.3rem 1rem;
+    font-size: 0.8rem;
+    border-bottom: 0.1rem solid black;
+}
+
+.game__info p:nth-child(4) {
+    width: 10rem;
+}
+
+.game__info span {
+    font-weight: bold;
+}
+
+.female {
+    background-color: #FF7D84;
+}
+
+.male {
+    background-color: #557FFF;
+}
+
+@media screen and (max-width: 600px) {
+    .calendar {
+        padding: 2rem 0.5rem;
+    }
+
+    .calendar__title h3 {
+        font-size: 1rem;
+    }
+
+    .calendar .game__time p {
+        font-size: 0.7rem;
+    }
+
+    .calendar .game__time span {
+        font-size: 0.9rem;
+    }
+
+    .game__time p {
+        width: 10rem;
+    }
+
+    .calendar .game__info p,
+    span {
+        font-size: 0.6rem;
+    }
+
+    .game__info p:nth-child(4) {
+        width: auto;
+    }
+}

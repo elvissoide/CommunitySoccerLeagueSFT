@@ -149,7 +149,7 @@ footer a {
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 600px) {
     .container {
         width: var(--contenedor-ancho-sm);
         margin: 0 auto;
