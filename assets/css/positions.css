@@ -1,7 +1,65 @@
 section {
     width: 100vw;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
 }
 
 section .positions__container {
     padding-top: 5rem;
+}
+
+/* ===== POSITIONS SECTION ===== */
+.positions {
+    max-width: 50rem;
+    margin: 0 auto;
+    background-color: white;
+    /* padding: 2rem 3rem; */
+}
+
+.positions .male {
+    background-color: #557FFF;
+}
+
+.positions .female {
+    background-color: #FF7D84;
+}
+
+.positions__title {
+    background-color: black;
+    /* color: white; */
+    padding: 2rem 3rem;
+    text-align: center;
+}
+
+.positions__table {
+    padding: 1rem;
+}
+
+/* ==== TABLA ==== */
+.table {
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.table th {
+    padding: 0.5rem 1rem;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.table td {
+    padding: 0.5rem 1rem;
+    /* background-color: aqua; */
+}
+
+.table td:nth-child(2) {
+    padding-right: 3rem;
+}
+
+.table td:not(:nth-child(2)) {
+    text-align: center;
+}
+
+.table th, td {
+    font-weight: bold;
+    border-bottom: 0.2rem solid rgba(0, 0, 0, 0.3);
 }

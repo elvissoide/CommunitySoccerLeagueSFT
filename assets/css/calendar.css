@@ -3,7 +3,7 @@ section {
     width: 100vw;
 }
 
-.calendar__container {
+section .calendar__container {
     padding-top: 5rem;
 }
 
