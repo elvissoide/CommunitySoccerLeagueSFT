@@ -71,6 +71,7 @@ section .calendar__container {
     background-color: #557FFF;
 }
 
+/* ========= RESPONSIVE ========= */
 @media screen and (max-width: 600px) {
     .calendar {
         padding: 2rem 0.5rem;

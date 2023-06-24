@@ -13,7 +13,6 @@ section .positions__container {
     max-width: 50rem;
     margin: 0 auto;
     background-color: white;
-    /* padding: 2rem 3rem; */
 }
 
 .positions .male {
@@ -26,7 +25,6 @@ section .positions__container {
 
 .positions__title {
     background-color: black;
-    /* color: white; */
     padding: 2rem 3rem;
     text-align: center;
 }
@@ -48,7 +46,6 @@ section .positions__container {
 
 .table td {
     padding: 0.5rem 1rem;
-    /* background-color: aqua; */
 }
 
 .table td:nth-child(2) {
@@ -59,7 +56,43 @@ section .positions__container {
     text-align: center;
 }
 
-.table th, td {
+.table th,
+td {
     font-weight: bold;
     border-bottom: 0.2rem solid rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 1024px) {
+    .positions__table {
+        overflow-x: auto;
+        padding: 0;
+        padding-bottom: 1rem;
+        margin: 0.5rem;
+    }
+
+    .table {
+        /* width: 100%; */
+    }
+
+    .table th:nth-child(1),
+    .table td:nth-child(1) {
+        position: sticky;
+        left: 0;
+        background-color: white;
+        z-index: 2;
+    }
+
+    .table th:nth-child(2),
+    .table td:nth-child(2) {
+        position: sticky;
+        left: 2.5rem;
+        background-color: white;
+        z-index: 2;
+    }
+
+    .table th:nth-child(n+3),
+    .table td:nth-child(n+3) {
+        z-index: 1;
+    }
+
 }

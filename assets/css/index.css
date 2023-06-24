@@ -1,0 +1,76 @@
+#principal {
+   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/imagen-principal-LDBSFT.jpg");
+   height: 85vh;
+   padding-top: 5rem;
+   background-size: cover;
+   background-position: center center;
+   color: white;
+}
+
+.presentacion {
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.presentacion p {
+   font-size: 1.5rem;
+}
+
+.presentacion p span {
+   font-size: 2.5rem;
+   font-weight: bolder;
+}
+
+.info-container {
+   background-color: #04CA96;
+   height: 15vh;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.info-container .informacion {
+   text-align: center;
+   font-size: 1.5rem;
+}
+
+footer {
+   margin-top: 0;
+}
+
+/* ========= RESPONSIVE ========= */
+
+@media screen and (max-width: 1024px) {
+   .presentacion p {
+      font-size: 1rem;
+   }
+   
+   .presentacion p span {
+      font-size: 2rem;
+      font-weight: bolder;
+   }
+
+   .info-container .informacion {
+      text-align: center;
+      font-size: 1.3rem;
+   }
+}
+
+@media screen and (max-width: 600px) {
+   .presentacion p {
+      font-size: 0.7rem;
+   }
+   
+   .presentacion p span {
+      font-size: 1.4rem;
+      font-weight: bolder;
+   }
+
+   .info-container .informacion {
+      text-align: center;
+      font-size: 0.8rem;
+   }
+}
