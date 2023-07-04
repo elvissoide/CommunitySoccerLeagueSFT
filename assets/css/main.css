@@ -109,6 +109,17 @@ footer a {
     margin-top: 0.3rem;
 }
 
+footer .developer-link {
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+footer .developer-link:hover {
+    color: rgb(172, 29, 62);
+}
+
 /* ========= Responsive Design ========= */
 
 @media screen and (max-width: 1024px) {
@@ -116,6 +127,7 @@ footer a {
         width: var(--contenedor-ancho-md);
         margin: 0 auto;
     }
+
     nav button {
         display: inline-block;
         background: transparent;
@@ -123,9 +135,11 @@ footer a {
         color: white;
         cursor: pointer;
     }
-    nav button#close-menu-icon{
+
+    nav button#close-menu-icon {
         display: none;
     }
+
     .nav__menu {
         position: fixed;
         top: 5rem;
@@ -136,10 +150,12 @@ footer a {
         gap: 0;
         display: none;
     }
+
     .nav__menu li {
         width: 100%;
         height: 5.8rem;
     }
+
     .nav__menu li a {
         background: black;
         /* box-shadow: -4rem 6rem 10rem rgba(0, 0, 0, 0.6); */
