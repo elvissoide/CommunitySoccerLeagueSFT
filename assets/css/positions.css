@@ -58,8 +58,21 @@ section .positions__container {
 
 .table th,
 td {
-    font-weight: bold;
     border-bottom: 0.2rem solid rgba(0, 0, 0, 0.3);
+}
+
+.team-cell {
+    position: relative;
+    line-height: 1.5;
+}
+
+.team-cell span {
+    padding-left: 1.8rem;
+}
+
+.team-logo {
+    max-width: 25px;
+    position: absolute;
 }
 
 @media screen and (max-width: 1024px) {
