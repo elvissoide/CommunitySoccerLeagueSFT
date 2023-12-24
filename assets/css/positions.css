@@ -1,3 +1,8 @@
+:root {
+    --color-table-background-male: #557fff2f;
+    --color-table-background-female: #ff7d8333;
+}
+
 section {
     width: 100vw;
     padding-top: 3rem;
@@ -37,19 +42,28 @@ section .positions__container {
 .table {
     margin: 0 auto;
     border-collapse: collapse;
+    /* background-color: var(--color-table-background); */
+}
+
+.table_male {
+    background-color: var(--color-table-background-male);
+}
+
+.table_female {
+    background-color: var(--color-table-background-female);
 }
 
 .table th {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.5rem;
     color: rgba(0, 0, 0, 0.6);
 }
 
 .table td {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.5rem;
 }
 
 .table td:nth-child(2) {
-    padding-right: 3rem;
+    min-width: 12rem;
 }
 
 .table td:not(:nth-child(2)) {
@@ -71,8 +85,12 @@ td {
 }
 
 .team-logo {
-    max-width: 25px;
+    max-width: 22px;
     position: absolute;
+}
+
+table tr td:nth-child(3) {
+    font-weight: bold;
 }
 
 @media screen and (max-width: 1024px) {
@@ -81,10 +99,6 @@ td {
         padding: 0;
         padding-bottom: 1rem;
         margin: 0.5rem;
-    }
-
-    .table {
-        /* width: 100%; */
     }
 
     .table th:nth-child(1),
@@ -98,7 +112,7 @@ td {
     .table th:nth-child(2),
     .table td:nth-child(2) {
         position: sticky;
-        left: 2.5rem;
+        left: 2rem;
         background-color: white;
         z-index: 2;
     }
