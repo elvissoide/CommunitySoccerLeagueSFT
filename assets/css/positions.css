@@ -45,14 +45,6 @@ section .positions__container {
     /* background-color: var(--color-table-background); */
 }
 
-.table_male {
-    background-color: var(--color-table-background-male);
-}
-
-.table_female {
-    background-color: var(--color-table-background-female);
-}
-
 .table th {
     padding: 0.5rem 0.5rem;
     color: rgba(0, 0, 0, 0.6);
@@ -99,6 +91,14 @@ table tr td:nth-child(3) {
         padding: 0;
         padding-bottom: 1rem;
         margin: 0.5rem;
+    }
+
+    .table_male {
+        background-color: var(--color-table-background-male);
+    }
+    
+    .table_female {
+        background-color: var(--color-table-background-female);
     }
 
     .table th:nth-child(1),
